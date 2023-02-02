@@ -248,6 +248,65 @@ button {
     margin-bottom: 16px;
 }
 
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-end;
+}
+
+.subscribe-text span {
+    font-weight: 500;
+    display: block;
+    color: var(--white-color);
+    margin-bottom: 16px;
+}
+
+
+.subscribe-btn {
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    color: var(--white-color);
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+.subscribe-button-text {
+    color: var(--white-color);
+}
+
+.subscribe-send-icon {
+    width: 24px;
+    height: 20px;
+    fill: var(--white-color);
+}
+
+.email-input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.email-input::placeholder {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    width: 36px;
+    height: 24px;
+}
+
 /* -----Hero----- */
 
 .hero {
@@ -406,14 +465,6 @@ button {
     height: 100%;
 }
 
-/* .gallery-item:is(:hover, :focus) .gallery-overlay {
-    transform: translateY(0);
-}
-
-.gallery-link:is(:hover, :focus) .gallery-overlay {
-    transform: translateY(0);
-} */
-
 .gallery-item:hover .gallery-overlay {
     transform: translateY(0);
 }
@@ -528,8 +579,17 @@ button {
 
 .footer-columns {
     display: flex;
-    gap: 120px;
+    flex-direction: row;
+    /* gap: 120px; */
     align-items: baseline;
+}
+
+.footer-left-column {
+    margin-right: 120px;
+}
+
+.footer-center-column {
+    margin-right: 80px;
 }
 
 .footer-soc-list {
@@ -580,7 +640,7 @@ button {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .backdrop.is-hidden .modal {
@@ -594,11 +654,97 @@ button {
     transform: translate(-50%, -50%) scale(1);
     width: 408px;
     min-height: 576px;
+    padding: 72px 24px 24px;
     background-color: var(--modal-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform var(--duration) var(--bezier);
+}
+
+.modal-head {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 14px;
+    color: var(--dark-color);
+}
+
+/* ---- for modal labels alias ----
+.modal-text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--subtext-color);
+    margin-bottom: 4px;
+} */
+
+.modal-alias {
+    font-weight: normal;
+    color: var(--subtext-color);
+    margin-bottom: 4px;
+}
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+
+.comment-label {}
+
+.modal-form {}
+
+.modal-item {
+    /* margin-bottom: 8px; */
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 14px 19px;
+}
+
+.modal-comment {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    min-height: 120px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    resize: none;
+}
+
+.modal-check {
+    width: 16px;
+    height: 16px;
+    display: none;
+}
+
+.agreement {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: baseline;
+    gap: 8px;
+}
+
+.policy-text {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: var(--subtext-color);
+}
+
+.modal-btn {
+    background-color: var(--brand-color);
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    border-radius: 4px;
+    color: var(--white-color);
 }
 
 .close-btn {
