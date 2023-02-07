@@ -671,7 +671,7 @@ button {
     color: var(--dark-color);
 }
 
-.modal-label span {
+.modal-label {
     font-weight: normal;
     height: 14px;
     font-size: 12px;
@@ -688,7 +688,6 @@ button {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 14px 19px 14px 38px;
-    margin-bottom: 8px;
     outline: transparent;
     transition: border-color var(--duration) var(--bezier), color var(--duration) var(--bezier);
 }
@@ -704,6 +703,7 @@ button {
 
 .input-wrap {
     position: relative;
+    margin-bottom: 8px;
 }
 
 .modal-icon {
@@ -713,6 +713,10 @@ button {
     transform: translateY(-50%);
     fill: var(--dark-color);
     transition: fill var(--duration) var(--bezier);
+}
+
+.modal-comment{
+    margin-bottom: 16px;
 }
 
 .comment-area {
@@ -727,7 +731,6 @@ button {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 8px 16px;
-    margin-bottom: 16px;
     outline: transparent;
     transition: border-color var(--duration) var(--bezier),
         color var(--duration) var(--bezier);
